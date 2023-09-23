@@ -256,7 +256,7 @@ export class Gantt implements IVisual {
     private legend: ILegend;
 
     private textProperties: TextProperties = {
-        fontFamily: "wf_segoe-ui_normal",
+        fontFamily: "Fujitsu Infinity Pro",
         fontSize: PixelConverter.toString(9),
         text: "#FF0000",
     };
@@ -287,11 +287,11 @@ export class Gantt implements IVisual {
         ResourceWidth: 100,
         TaskColor: "#00B099",
         TaskLineColor: "#ccc",
-        CollapseAllColor: "#000",
-        PlusMinusColor: "#5F6B6D",
-        CollapseAllTextColor: "#aaa",
+        CollapseAllColor: "#e6e6e6",
+        PlusMinusColor: "#e6e6e6",
+        CollapseAllTextColor: "#e6e6e6",
         MilestoneLineColor: "#ccc",
-        TaskCategoryLabelsRectColor: "#000000",
+        TaskCategoryLabelsRectColor: "rgba(255,255,255,0)",
         TaskLineWidth: 15,
         IconMargin: 12,
         IconHeight: 16,
@@ -403,7 +403,7 @@ export class Gantt implements IVisual {
     private createViewport(element: HTMLElement): void {
         let self = this;
         const isHighContrast: boolean = this.colorHelper.isHighContrast;
-        const axisBackgroundColor: string = this.colorHelper.getThemeColor();
+        const axisBackgroundColor: string = "rgba(255,255,255,0)";
         // create div container to the whole viewport area
         this.ganttDiv = this.body.append("div")
             .classed(Selectors.Body.className, true);
@@ -1861,7 +1861,7 @@ export class Gantt implements IVisual {
         let taskLabelsFontSize: number = this.viewModel.settings.taskLabels.fontSize;
         let taskLabelsWidth: number = this.viewModel.settings.taskLabels.width;
         let taskConfigHeight: number = this.viewModel.settings.taskConfig.height || DefaultChartLineHeight;
-        const categoriesAreaBackgroundColor: string = this.colorHelper.getThemeColor();
+        const categoriesAreaBackgroundColor: string = "rgba(255,255,255,0)";
         const isHighContrast: boolean = this.colorHelper.isHighContrast;
 
         if (taskLabelsShow) {

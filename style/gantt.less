@@ -36,62 +36,64 @@
         overflow: auto;
         position: absolute;
     }
-    
+
     .gantt {
         position: absolute;
+
         .axis {
             path, line {
                 stroke: #000;
             }
-    
+
             path {
-                fill: none;
+                fill: rgba(255,255,255,0);
                 stroke-width: 1.5;
             }
-    
+
             line {
                 stroke-width: 1;
             }
-    
-            font-size: 10px;
+
+            font-size: 20px;
         }
-    
+
         .tasks {
             .task {
                 .task-resource {
                     font-size: medium;
                     font-weight: bold;
-                    font-family: 'Roboto',-apple-system,BlinkMacSystemFont,sans-serif;
+                    font-family: 'Fujitsu Infinity Pro';
                     letter-spacing: .22px;
                 }
-    
-                .task-progress {    
+
+                .task-progress {
                     opacity: 1;
                 }
-                .task-pseudo-gradient{
+
+                .task-pseudo-gradient {
                     opacity: .4;
-                    fill: white!important;
+                    fill: white !important;
                 }
             }
         }
-    
+
         .chart-line {
             stroke-width: 2px;
             stroke-dasharray: 3, 3;
             stroke: #000;
         }
-    
+
         .task-labels {
             width: 110px;
         }
-    
-        .task-lines{
+
+        .task-lines {
             .label {
-                font-family: 'Roboto',-apple-system,BlinkMacSystemFont,sans-serif;
+                font-family: 'Fujitsu Infinity Pro';
                 font-weight: 400;
                 letter-spacing: .22px;
-                
-                .parent{
+
+                .parent {
                     font-weight: 700;
                 }
 
