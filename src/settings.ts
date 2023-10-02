@@ -78,6 +78,7 @@ export class TaskLabelsSettings {
     show: boolean = true;
     fill: string = "#FFFFFF";
     bgFill: string = "#FFFFFF";
+    transparent: boolean = false;
     fontSize: number = 9;
     width: number = 110;
 }

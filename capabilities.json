@@ -665,6 +665,13 @@
             }
           }
         },
+        "transparent": {
+          "displayName": "Background Transparent",
+          "displayNameKey": "Visual_BackgroundTransparency",
+          "type": {
+            "bool": true
+          }
+        },
         "fontSize": {
           "displayName": "Font Size",
           "displayNameKey": "Visual_FontSize",
