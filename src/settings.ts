@@ -108,6 +108,7 @@ export class DateTypeSettings {
     todayColor: string = "#000000";
     axisColor: string = "#000000";
     axisTextColor: string = "#000000";
+    axisBGColor: string = "rgba(255,255,255,0)"
 }
 
 export class TooltipConfigSettings {

@@ -903,6 +903,17 @@
               }
             }
           }
+        },
+        "axisBGColor": {
+          "displayName": "Axis Background Color",
+          "displayNameKey": "Visual_DateType_AxisBackgroundColor",
+          "type": {
+            "fill": {
+              "solid": {
+                "color": true
+              }
+            }
+          }
         }
       }
     }

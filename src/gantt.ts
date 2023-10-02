@@ -404,6 +404,8 @@ export class Gantt implements IVisual {
         let self = this;
         const isHighContrast: boolean = this.colorHelper.isHighContrast;
         const axisBackgroundColor: string = "rgba(255,255,255,0)";
+        //console.log('this.viewModel.settings.dateType', this.viewModel.settings.dateType);
+        //let axisBackgroundColor: string = this.viewModel.settings.dateType.axisBGColor;
         // create div container to the whole viewport area
         this.ganttDiv = this.body.append("div")
             .classed(Selectors.Body.className, true);
