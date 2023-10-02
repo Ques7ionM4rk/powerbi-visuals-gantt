@@ -77,6 +77,7 @@ export class LegendSettings {
 export class TaskLabelsSettings {
     show: boolean = true;
     fill: string = "#FFFFFF";
+    bgFill: string = "#FFFFFF";
     fontSize: number = 9;
     width: number = 110;
 }

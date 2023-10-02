@@ -1858,6 +1858,7 @@ export class Gantt implements IVisual {
         let taskLabelsShow: boolean = this.viewModel.settings.taskLabels.show;
         let displayGridLines: boolean = this.viewModel.settings.general.displayGridLines;
         let taskLabelsColor: string = this.viewModel.settings.taskLabels.fill;
+        let taskLabelsBGColor: string = this.viewModel.settings.taskLabels.bgFill;
         let taskLabelsFontSize: number = this.viewModel.settings.taskLabels.fontSize;
         let taskLabelsWidth: number = this.viewModel.settings.taskLabels.width;
         let taskConfigHeight: number = this.viewModel.settings.taskConfig.height || DefaultChartLineHeight;
@@ -1867,7 +1868,8 @@ export class Gantt implements IVisual {
         if (taskLabelsShow) {
             this.lineGroupWrapper
                 .attr("width", taskLabelsWidth)
-                .attr("fill", isHighContrast ? categoriesAreaBackgroundColor : Gantt.DefaultValues.TaskCategoryLabelsRectColor)
+                //.attr("fill", isHighContrast ? categoriesAreaBackgroundColor : Gantt.DefaultValues.TaskCategoryLabelsRectColor)
+                .attr("fill", taskLabelsBGColor)
                 .attr("stroke", this.colorHelper.getHighContrastColor("foreground", Gantt.DefaultValues.TaskLineColor))
                 .attr("stroke-width", 1);
 
