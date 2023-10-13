@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\src",
+    "\\style",
+    "\\test",
+    "\\test\\helpers"
   ],
-  "SelectedNode": "\\C:\\Users\\marek\\Source\\Repos\\powerbi-visuals-gantt",
+  "SelectedNode": "\\src\\settings.ts",
   "PreviewInSolutionExplorer": false
 }

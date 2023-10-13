@@ -991,7 +991,8 @@ export class Gantt implements IVisual {
                 description: categoryValue as string,
                 tooltipInfo: tooltips,
                 selected: false,
-                identity: selectionId,
+                //identity: selectionId,
+                identity: selectionBuilder.createSelectionId(),
                 extraInformation,
                 daysOffList: [],
                 wasDowngradeDurationUnit,
@@ -2942,9 +2943,10 @@ export class Gantt implements IVisual {
     private renderTooltip(selection: Selection<Line | Task | MilestonePath>): void {
         this.tooltipServiceWrapper.addTooltip(
             selection,
-            (tooltipEvent: TooltipEventArgs<TooltipEnabledDataPoint>) => {
-                return tooltipEvent.data.tooltipInfo;
-            });
+           (tooltipEvent: TooltipEventArgs<TooltipEnabledDataPoint>) =>
+               tooltipEvent.data.tooltipInfo,
+            (tooltipEvent: TooltipEventArgs<Task>) => tooltipEvent.data.identity
+        );
     }
 
     private updateElementsPositions(margin: IMargin): void {

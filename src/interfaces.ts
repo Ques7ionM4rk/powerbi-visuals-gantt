@@ -85,6 +85,7 @@ export interface Task extends SelectableDataPoint {
     stepDurationTransformation?: number;
     highlight?: boolean;
     Milestones?: Milestone[];
+    identity: ISelectionId;
 }
 
 export interface GroupedTask {
